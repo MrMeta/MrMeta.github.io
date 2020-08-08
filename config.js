@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: '',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Blog by Meta Park',
+  subtitle: 'Blog by Meta Park',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
