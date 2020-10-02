@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: '',
+  url: 'https://MrMeta.github.io',
   siteUrl: 'https://MrMeta.github.io',
   pathPrefix: '/',
   title: 'Blog by Meta Park',
