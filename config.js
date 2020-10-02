@@ -2,6 +2,7 @@
 
 module.exports = {
   url: '',
+  siteUrl: 'https://MrMeta.github.io',
   pathPrefix: '/',
   title: 'Blog by Meta Park',
   subtitle: 'Blog by Meta Park',
