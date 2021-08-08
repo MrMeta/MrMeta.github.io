@@ -21,7 +21,7 @@ const MaterialsListTemplate = () => {
             <li key={material.node.id}>
               {
                 material.node.frontmatter.isWritten
-                ? <span className={styles['is-written']}>{material.node.frontmatter.title}</span>
+                ? <div><span className={styles['is-written']}>{material.node.frontmatter.title}</span> (<Link to={material.node.frontmatter.postPath}>Move to post</Link>)</div>
                 : <Link to={`/materials/${material.node.frontmatter.slug}`}>{material.node.frontmatter.title}</Link>
               }
             </li>

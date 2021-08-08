@@ -15,6 +15,7 @@ const useMaterialsList = () => {
                 title
                 slug
                 date
+                postPath
                 isWritten
               }
             }
