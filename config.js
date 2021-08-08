@@ -30,6 +30,10 @@ module.exports = {
     {
       label: 'Tags',
       path: '/tags',
+    },
+    {
+      label: 'Writing Materials',
+      path: '/materials'
     }
   ],
   author: {
