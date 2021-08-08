@@ -1,7 +1,6 @@
 // @flow strict
 import React from 'react';
 import { Link } from 'gatsby';
-import kebabCase from 'lodash/kebabCase';
 import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
@@ -22,8 +21,8 @@ const MaterialsListTemplate = () => {
               {
                 material.node.frontmatter.isWritten
                 ? <div><span className={styles['is-written']}>{material.node.frontmatter.title}</span> (<Link to={material.node.frontmatter.postPath}>Move to post</Link>)</div>
-                : <Link to={`/materials/${material.node.frontmatter.slug}`}>{material.node.frontmatter.title}</Link>
-              }
+                  : <Link to={`/materials/${material.node.frontmatter.slug}`}>{material.node.frontmatter.title}</Link>
+                }
             </li>
           ))}
         </ul>
