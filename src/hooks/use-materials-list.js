@@ -13,6 +13,7 @@ const useMaterialsList = () => {
             node {
               frontmatter {
                 title
+                slug
                 date
                 isWritten
               }

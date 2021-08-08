@@ -68,6 +68,13 @@ const createPages = async ({ graphql, actions }) => {
         component: path.resolve('./src/templates/post-template.js'),
         context: { slug: edge.node.fields.slug }
       });
+    } else if (_.get(edge, 'node.frontmatter.template') === 'material') {
+      console.log(edge.node.fields.slug);
+      createPage({
+        path: edge.node.fields.slug,
+        component: path.resolve('./src/templates/material-template.js'),
+        context: { slug: edge.node.fields.slug }
+      });
     }
   });
 

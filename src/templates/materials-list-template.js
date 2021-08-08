@@ -19,9 +19,11 @@ const MaterialsListTemplate = () => {
         <ul>
           {materials.map((material) => (
             <li key={material.node.id}>
-              <span className={material.node.frontmatter.isWritten ? styles['is-written'] : undefined}>
-                {material.node.frontmatter.title}
-                </span>
+              {
+                material.node.frontmatter.isWritten
+                ? <span className={styles['is-written']}>{material.node.frontmatter.title}</span>
+                : <Link to={`/materials/${material.node.frontmatter.slug}`}>{material.node.frontmatter.title}</Link>
+              }
             </li>
           ))}
         </ul>
